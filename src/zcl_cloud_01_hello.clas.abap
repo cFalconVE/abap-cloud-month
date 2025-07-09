@@ -10,10 +10,7 @@ class zcl_cloud_01_hello definition
   protected section.
   private section.
 
-
 endclass.
-
-
 
 class zcl_cloud_01_hello implementation.
   method if_oo_adt_classrun~main.
@@ -26,6 +23,7 @@ class zcl_cloud_01_hello implementation.
 *    data(lv_hello) = out->get( lv_hello ).
 
     out->write( lv_hello ).
+    out->write( 'Second Commit' ).
 
   endmethod.
 
