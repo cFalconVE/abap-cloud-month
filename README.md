@@ -1,2 +1,2 @@
 # abap-cloud-month
-ABAP Cloud Dev July
+ABAP Cloud Dev - July 2025
