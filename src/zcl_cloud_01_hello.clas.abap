@@ -19,9 +19,6 @@ class zcl_cloud_01_hello implementation.
     concatenate 'Hello Development for Cloud,' sy-uname
            into lv_hello separated by space.
 
-
-*    data(lv_hello) = out->get( lv_hello ).
-
     out->write( lv_hello ).
     out->write( 'Second Commit' ).
 
