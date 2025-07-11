@@ -23,9 +23,14 @@ define root view entity z_i_travel_ac_caf
       currency_code        as CurrencyCode,
       description          as Description,
       overall_status       as OverallStatus,
+      @Semantics.user.createdBy: true
       local_created_by     as LocalCreatedBy,
+      @Semantics.systemDateTime.createdAt: true
       local_created_at     as LocalCreatedAt,
+      @Semantics.user.localInstanceLastChangedBy: true
       local_last_change_by as LocalLastChangeBy,
+      @Semantics.systemDateTime.localInstanceLastChangedAt: true
       local_last_change_at as LocalLastChangeAt,
+      @Semantics.systemDateTime.lastChangedAt: true
       last_change_at       as LastChangeAt
 }

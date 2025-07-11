@@ -1,0 +1,9 @@
+projection;
+strict ( 2 );
+
+define behavior for Z_C_TRAVEL_AC_CAF alias Vuelos
+{
+  use create;
+  use update;
+  use delete;
+}

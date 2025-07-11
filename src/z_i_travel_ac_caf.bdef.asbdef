@@ -1,7 +1,7 @@
 managed implementation in class zbp_i_travel_ac_caf unique;
 strict ( 2 );
 
-define behavior for z_i_travel_ac_caf alias Viajes
+define behavior for z_i_travel_ac_caf alias Vuelos
 persistent table zcaf_travel
 lock master
 authorization master ( instance )
