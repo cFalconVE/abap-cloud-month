@@ -1,0 +1,10 @@
+@EndUserText.label: 'Vuelo -  Service Definition'
+@ObjectModel: {
+    leadingEntity: {
+        name: 'Z_C_TRAVEL_AC_CAF'
+    }
+}
+define service z_sd_travel_ac_caf
+  provider contracts odata_v4_ui {
+  expose Z_C_TRAVEL_AC_CAF as Vuelo;
+}

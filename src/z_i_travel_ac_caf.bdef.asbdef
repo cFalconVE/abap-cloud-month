@@ -1,16 +1,26 @@
 managed implementation in class zbp_i_travel_ac_caf unique;
 strict ( 2 );
+with draft;
 
 define behavior for z_i_travel_ac_caf alias Vuelos
 persistent table zcaf_travel
-lock master
+draft table zcaf_travel_d
+etag master LocalLastChangeBy
+lock master total etag LastChangeAt
 authorization master ( instance )
 //etag master <field_name>
 {
   create ( authorization : global );
   update;
   delete;
+
   field ( readonly, numbering : managed ) TravelUUID;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
 
   mapping for zcaf_travel corresponding
     {

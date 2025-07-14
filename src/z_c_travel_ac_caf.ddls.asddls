@@ -1,6 +1,7 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
-@EndUserText.label: 'Viaje Consumption'
+@EndUserText.label: 'Vuelo Consumption'
 @Metadata.ignorePropagatedAnnotations: true
+@Metadata.allowExtensions: true
 define root view entity Z_C_TRAVEL_AC_CAF
   provider contract transactional_query
   as projection on z_i_travel_ac_caf
