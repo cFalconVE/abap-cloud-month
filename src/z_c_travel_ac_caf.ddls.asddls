@@ -8,6 +8,9 @@ define root view entity Z_C_TRAVEL_AC_CAF
 {
   key TravelUUID,
       TravelID,
+      @Consumption.valueHelpDefinition: [{ entity : { name : '/DMO/I_Agency_StdVH',
+                                                      element: 'AgencyID' },
+                                           useForValidation: true }]
       AgencyID,
       CustemerID,
       BeginDate,
@@ -16,6 +19,9 @@ define root view entity Z_C_TRAVEL_AC_CAF
       BookingFee,
       @Semantics.amount.currencyCode: 'CurrencyCode'
       TotalPrice,
+      @Consumption.valueHelpDefinition: [{ entity : { name : 'I_CurrencyStdVH',
+                                                      element: 'Currency' },
+                                           useForValidation: true }]
       CurrencyCode,
       Description,
       OverallStatus,
