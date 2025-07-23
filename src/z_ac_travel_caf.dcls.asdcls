@@ -1,0 +1,7 @@
+@EndUserText.label: 'Access Control for Travel'
+@MappingRole: true
+define role Z_AC_TRAVEL_CAF {
+    grant select on Z_I_TRAVEL_AC_CAF
+           where (AgencyID) = aspect pfcg_auth(zao_a_caf, zaf_a_caf, 'ACTVT' = '03');
+//                       where AgencyID = '070046'; 
+}
